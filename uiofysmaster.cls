@@ -126,7 +126,6 @@
 \RequirePackage{graphicx}
 \renewcommand{\maketitle}{
 \newgeometry{margin=3cm}
-\pagenumbering{roman}
 \thispagestyle{empty}
 \begin{center}        % Sentrerer teksten
   % Tittel
@@ -161,20 +160,4 @@
 \end{center}
 \clearemptydoublepage
 \restoregeometry
-}
-
-\makeatletter
-\def\pagenumberingnoreset#1{%
-  \gdef\thepage{\csname @#1\endcsname \c@page}}
-\makeatother
-\let\oldtableofcontents\tableofcontents
-\renewcommand{\tableofcontents}{
-{
-  \pagenumberingnoreset{roman}
-  \pagestyle{tableofcontents}
-  \pagenumbering{gobble}
-  \oldtableofcontents
-  \cleardoublepage
-}
-\pagenumbering{arabic}
 }
