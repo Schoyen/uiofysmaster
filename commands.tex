@@ -8,8 +8,11 @@
 
 \newcommand{\braket}[2]{\langle #1 | #2 \rangle}
 
-\newcommand{\ccr}[1]{c^{\dagger}_{#1}}
-\newcommand{\can}[1]{c_{#1}}
+%\newcommand{\ccr}[1]{c^{\dagger}_{#1}}
+%\newcommand{\can}[1]{c_{#1}}
+
+\newcommand{\ccr}[1]{\hat{#1}^{\dagger}}
+\newcommand{\can}[1]{\hat{#1}}
 
 \newcommand{\com}[2]{\left[#1, #2\right]}
 \newcommand{\acom}[2]{\left\{#1, #2\right\}}
@@ -19,3 +22,24 @@
 \newcommand{\brac}[1]{\left\{ #1 \right\}}
 
 \newcommand{\half}{\frac{1}{2}}
+
+% Commands for the coupled cluster method
+\newcommand{\cc}{\Psi_{\text{CC}}}
+\newcommand{\ketcc}{\ket{\cc}}
+\newcommand{\bicc}{\bra{\tilde{\Psi}}}
+
+\newcommand{\clust}{T}
+\newcommand{\clustamp}{t}
+
+% Commands for the reference Slater
+\newcommand{\slat}{\Phi}
+\newcommand{\ketslat}{\ket{\slat}}
+\newcommand{\braslat}{\bra{\slat}}
+\newcommand{\bislat}{\bra{\tilde{\slat}}}
+
+\newcommand{\ketslate}[2]{\ket{\slat^{#1}_{#2}}}
+\newcommand{\braslate}[2]{\bra{\slat^{#1}_{#2}}}
+
+% Commands for the configuration interaction method
+\newcommand{\ci}{\Psi_{\text{CI}}}
+\newcommand{\ketci}{\ket{\ci}}
