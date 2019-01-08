@@ -109,7 +109,7 @@ Adding a better font for your listings environment
 
 Having a prettier font requires you to compile your document with XeLaTeX.
 
-While we have at least added a few improvements to the default setup of the listings environment already (such as frame and background), you might want to add an even prettier font, such as Droid Sans Mono. 
+While we have at least added a few improvements to the default setup of the listings environment already (such as frame and background), you might want to add an even prettier font, such as Droid Sans Mono.
 If you are using Ubuntu you will need to install the package fonts-droid first:
 ```bash
 sudo apt-get install fonts-droid
@@ -138,7 +138,7 @@ The command `\eqref{}` works exactly like `\ref{}`, but it adds parantheses to a
 **Figures and tables**
 
 `\autoref{}` is a usefull command when refering to to figures and tables. The command creates a reference with additional text
-corresponding to the target's type. For example, the command `\autoref{fig:myfigure}` would create a hyperlink to the 
+corresponding to the target's type. For example, the command `\autoref{fig:myfigure}` would create a hyperlink to the
 `\label{fig:myfigure}` command, wherever it is. Assuming that this label is pointing to a figure, the hyperlink would
 contain the text "Figure 1.1", or similar.
 
